@@ -2,7 +2,7 @@
 
 ## ¿Qué es ncdu?
 
-**ncdu** (NCurses Disk Usage) para piscines y estudiantes de 42 es un analizador de uso de disco para sistemas Linux y Unix que proporciona una interfaz de usuario basada en texto (TUI - Text User Interface) construida con la biblioteca ncurses. Es una alternativa moderna y más eficiente al comando tradicional `du` de Unix.
+**ncdu** (NCurses Disk Usage) es compartido por **ncaravac** para piscineros y estudiantes de 42. Analizador de uso de disco para sistemas Linux y Unix que proporciona una interfaz de usuario basada en texto (TUI - Text User Interface) construida con la biblioteca ncurses. Es una alternativa moderna y más eficiente al comando tradicional `du` de Unix.
 
 ### Características principales:
 
