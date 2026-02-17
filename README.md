@@ -98,6 +98,17 @@ Para más información, consulta:
 - Manual: `man ncdu`
 - Ayuda interactiva: Ejecuta `ncdu` y presiona `?`
 
+---
+
+## Información de Contacto
+
+**GitHub:** [ncara42](https://github.com/ncara42)  
+**42 Network:** [42 Madrid](https://www.42madrid.com/)
+
+---
+
+*Documento para fines de portfolio profesional. Archivo libre de malware.*
+
 ## Contribuciones
 
 Este README es un recurso educativo sobre ncdu. Para contribuir al proyecto ncdu oficial, visita:
