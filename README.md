@@ -39,8 +39,9 @@ brew install ncdu
 
 ### Desde el código fuente:
 ```bash
-git clone https://dev.yorhel.nl/ncdu
+git clone https://g.blicky.net/ncdu.git
 cd ncdu
+autoreconf -i
 ./configure
 make
 sudo make install
@@ -265,15 +266,15 @@ ncdu ~/proyectos
    ssh usuario@servidor "du -ab /ruta" | ncdu -f-
    ```
 
-3. **Combinación con otros comandos**: 
+3. **Automatización con scripts**: 
    ```bash
-   # Encontrar los 10 directorios más grandes
-   ncdu -o- / | grep "^[0-9]" | sort -rn | head -10
+   # Guardar análisis periódico para comparar uso de disco
+   ncdu -0 -o /var/log/ncdu-snapshot-$(date +%Y%m%d).json /home
    ```
 
-4. **Modo batch**: Para scripts, usa `du` con las opciones de ncdu:
+4. **Análisis con exclusiones**: Para scripts, excluye directorios del sistema:
    ```bash
-   ncdu --exclude /proc --exclude /sys -o resultado.json /
+   ncdu -x /proc -x /sys -x /dev -o resultado.ncdu /
    ```
 
 ## Conclusión
